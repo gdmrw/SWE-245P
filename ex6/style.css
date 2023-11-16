@@ -1,0 +1,27 @@
+.carousel {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    overflow: hidden;
+  }
+  
+  .slide__container {
+    display: inline-flex;
+    white-space: nowrap;
+    position: relative;
+    height: 300px;
+  }
+  
+  img {
+    object-fit: cover;
+    border-radius: 17px;
+    width: 600px;
+    height: 600px;
+
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+  }
