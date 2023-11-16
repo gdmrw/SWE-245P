@@ -2,14 +2,14 @@ import "./SidebarContent.css";
 function SidebarContent() {
     return (
         <>
-            <div class="sidenav">
+            <div className="sidenav">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#clients">Clients</a>
                 <a href="#contact">Contact</a>
             </div>
 
-            <div class="main">
+            <div className="main">
                 <h2>Sidebar</h2>
                 <p>This sidebar is of full height (100%) and always shown.</p>
                 <p>Scroll down the page to see the result.</p>

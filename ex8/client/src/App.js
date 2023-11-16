@@ -1,5 +1,4 @@
 // CSS and other resources
-import logo from "./logo.svg";
 import "./App.css";
 
 // Components
