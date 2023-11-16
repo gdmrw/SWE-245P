@@ -1,0 +1,34 @@
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  /* Define the initial state of entering and exiting elements. */
+.fade-enter, .fade-exit {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Define the final state for entered elements. */
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Define the final state for exited elements. */
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Optional: Define the state for when the element is completely entered. */
+.fade-enter-done {
+  opacity: 1;
+}
+
+/* Optional: Define the state for when the element is completely exited. */
+.fade-exit-done {
+  opacity: 0;
+}

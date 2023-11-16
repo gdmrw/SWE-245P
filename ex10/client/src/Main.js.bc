@@ -1,0 +1,59 @@
+import "./Main.css";
+import { useState, useEffect } from "react";
+
+
+function Main(props, children) {
+  const [loadingData, setLoadingData] = useState(true);
+  const [error, setError] = useState(false);
+  const [emptyData, setEmptyData] = useState(false);
+  const [data, setData] = useState(false);
+  const zip = "92697"
+  const country = "US"
+  const APIkey = "d97247090d05a055c938b8972cec9430"
+  const lat = "33.6425";
+  const lon = "-117.8417";
+
+
+  useEffect(() => {
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}`
+
+      //https://api.openweathermap.org/data/2.5/weather?lat=33.6425&lon=-117.8417&appid=d97247090d05a055c938b8972cec9430
+    )
+      // handling responses
+      .then((response) => response.json())
+      // handling normal data state
+      .then((actualData) => {
+        setLoadingData(false);
+        setError(false);
+        setData(actualData);
+        console.log(actualData)
+      })
+      // handling errors
+      .catch((err) => {
+        // console.log(err.message);
+        setLoadingData(false);
+        setError(true);
+      });
+  }, []);
+
+  // Render
+  return (
+    <>
+    loading: {loadingData ? "loading" : "not loading"}
+    <br />
+    error: {error ? "error" : "no error"}
+    <br />
+    {!loadingData && !error && (
+    <>
+      location: {data.name}
+      <br />
+      Temperature: {data.main.temp}
+    </>
+)}
+  </>
+  
+  );
+}
+
+export default Main;
