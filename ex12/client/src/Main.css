@@ -1,0 +1,47 @@
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  /* Define the initial state of entering and exiting elements. */
+.fade-enter, .fade-exit {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Define the final state for entered elements. */
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Define the final state for exited elements. */
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Optional: Define the state for when the element is completely entered. */
+.fade-enter-done {
+  opacity: 1;
+}
+
+/* Optional: Define the state for when the element is completely exited. */
+.fade-exit-done {
+  opacity: 0;
+}
+.background{
+    background-image: url('bk.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* This will ensure that the background covers the entire element */
+    background-position: center bottom; /* This will center your background image */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    color: white; /* Example text color - change as needed */
+    text-align: right; /* Aligns text to the center */
+    padding: 20px; /* Adds space inside the div, around the content */
+    height: 100vh; /* Example height - change as needed */
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}

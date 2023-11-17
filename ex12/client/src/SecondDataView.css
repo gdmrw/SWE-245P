@@ -1,0 +1,18 @@
+/* SecondDataView.css */
+.second-data-view {
+    background-image: url('car1.png'); /* Adjust the path as necessary */
+    background-size: cover; /* This will ensure that the background covers the entire element */
+    background-position: bottom; /* This will center your background image */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    color: white; /* Example text color - change as needed */
+    text-align: center; /* Aligns text to the center */
+    padding: 20px; /* Adds space inside the div, around the content */
+    height: 100vh; /* Example height - change as needed */
+  }
+  
+  .second-data-view p {
+    font-size: 24px; /* Example font size for the paragraph */
+    font-weight: bold; /* Makes the paragraph text bold */
+    padding-left: 180px;
+  }
+  
